@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBUT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        function FormSubmit() {
+            document.testForm.submit();
+        }
+        </script>
+</head>
+
+<body>
+    <div id="password-overlay">
+        <div id="password-container">
+            <label for="password">비밀번호: </label>
+            <input type="password" id="password">
+            <button onclick="checkPassword()">확인</button>
+    <form action="?" method="POST">
+        <div class="g-recaptcha" data-sitekey="6Lel7T8pAAAAAFdqxFcZAIykp5Pt41FEHHc1bqYU"></div>
+        <br/>
+        <!--<input type="submit" value="Submit">-->
+      </form>
+    <div id="ip-container">IP: <span id="user-ip"></span></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
